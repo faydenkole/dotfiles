@@ -14,14 +14,17 @@ g:netrw_home = expand('~/.local/state/vim')
 
 if has("gui_running")
     set guifont=Fira\ Code\ 16
+    set guiligatures=!\"$%&\'()*+,-./:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{\|}~
     set guioptions-=m
     set guioptions-=T
     set guioptions-=e
     set guioptions-=a
-    set guioptions+=d
     set guioptions+=c
-    set lines=999 columns=999
     set termguicolors
+    set clipboard=unnamedplus
+else
+    packadd osc52
+    set clipmethod=osc52
 endif
 
 syntax on
@@ -43,7 +46,6 @@ set hlsearch
 set incsearch
 set ignorecase
 set smartcase
-set clipboard=unnamedplus
 set hidden
 set backup
 set writebackup
@@ -69,3 +71,6 @@ augroup VimAutoCompleteSave
         endif
     }
 augroup END
+
+# Minimap
+# autocmd WinNew,BufReadPost,BufWritePost * MinimapOpen

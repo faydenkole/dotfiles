@@ -30,18 +30,18 @@ Pack 'k-takata/minpac', {'type': 'opt'}
 Pack 'lambdalisue/vim-suda'
 Pack 'bkad/CamelCaseMotion'
 Pack 'vim-scripts/ReplaceWithRegister'
-Pack 'nda-cunh/vim9-autopairs'
+Pack 'jiangmiao/auto-pairs'
+# Pack 'nda-cunh/vim9-autopairs'
 Pack 'monkoose/vim9-stargate'
 Pack 'vim-fuzzbox/fuzzbox.vim'
+Pack 'Bakudankun/minimap.vim'
 
-Pack 'yegappan/lsp'
+Pack 'h-east/lsp.vim'
+Pack 'h-east/vim9ls'
 
 Pack 'tpope/vim-fugitive'
 Pack 'habamax/vim-shout'
 
 Pack 'morhetz/gruvbox'
-Pack 'https://codeberg.org/micdzu/aalto.vim'
-Pack 'ku1ik/vim-monokai'
-Pack 'tomasr/molokai'
 
 plugpac#End()
